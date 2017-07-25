@@ -1,0 +1,12 @@
+.ember-logo{
+    height: 30rem;
+}
+
+.relative-slide {
+    position: relative;
+}
+
+.push-to-bottom{
+    position:fixed;
+    bottom: 0;
+}

@@ -24,6 +24,8 @@
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
 
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/_private.css">
+
     <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
     <!-- FACEBOOK -->
@@ -57,19 +59,63 @@
 </head>
 <body>
     <main role="main">
-        <article id="slides" class="vertical">
-            <section>
-                <span class="background"></span>
-                <div class="wrap aligncenter">
+        <article id="webslides">
+            <section class="bg-black relative-slide">
+                <span class="background dark" style="background-image:url('../static/images/blueprint-uss-enterprise.jpg');"></span>
+                <div class="aligncenter">
                     <h1>Ember Blueprints</h1>
                     <p>Estructura tus archivos de forma fácil</p>
                 </div>
+                <footer class="push-to-bottom">
+                    <span class="alignleft">
+                        <img src="static/images/ember-builder.png" class=" ember-logo">
+                    </span>
+                </footer>   
+            </section>
+            <section>
+                <div class="aligncenter">
+                    <h1>¿Qué es un Blueprint?</h1>
+                    <p>En arquitectura un Blueprint es el conjunto de planos en los que se especifica la estructura a construir</p>
+                    <h2>¿Y en el desarrollo de sofware?</h2>
+                    <p>Son generadores de snippets con las que puedes una entidad</p>
+                </div>
+            </section>
+            <section>
+                <div class="aligncenter">
+                    <h1>Estructura</h1>
+                    <p>Los Blueprint se han de crear en pares, uno para la entidad en sí y otro para el test correspondiente</p>
+                    <img src="static/images/blueprint-structure.png">
+                </div>
             </section>
             <section></section>
-            <section></section>
-            <section></section>
+            <section>
+                <div class="aligncenter">
+                    <h1>Desventajas</h1>
+                    <ul>
+                        <li><h3>Van muy ligados a la arquitectura de tu aplicación => Poco Reusable</h3></li>
+                        <li><h3>Tienen sentido sólo para casos génericos</h3></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="aligncenter">
+                    <h1>Ventajas</h1>
+                    <ul>
+                        <li><h3>Permiten automatizar la creación de entidades con tienen un procedimiento estandarizado</h3></li>
+                        <li><h3>Agilizan el desarrollo</h3></li>
+                        <li><h3>Son simples de implementar</h3></li>
+                    </ul>
+                </div>
+            </section>
         </article>
     </main>
+    <script src="../static/js/webslides.js"></script>
     
+    <script>
+      window.ws = new WebSlides();
+    </script>
+    
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
 </body>
 </html>
