@@ -31,21 +31,6 @@ module.exports = {
           return 'template';
         }
         return options.dasherizedModuleName;
-      },
-      __root__: function(options) {
-        if (options.inRepoAddon) {
-          return path.join('lib', options.inRepoAddon, 'addon');
-        }
-
-        if (options.inDummy) {
-          return path.join('tests','dummy','app');
-        }
-
-        if (options.inAddon) {
-          return 'addon';
-        }
-
-        return 'app';
       }
     };
   },
