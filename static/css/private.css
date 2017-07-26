@@ -13,6 +13,7 @@
 
 ul {
     list-style: none;
+    padding: 2em 0;
 }
 
 li:before {
@@ -27,4 +28,15 @@ li {
     flex-direction: row;
     align-items: center;
     padding: .2em 0; 
+}
+
+.social-medias {
+    display: flex;
+    justify-content: space-between;
+    max-width: 55%;
+    padding: 1.2em 0;
+}
+
+.files-example {
+    height: 20em;
 }
