@@ -40,3 +40,14 @@ li {
 .files-example {
     height: 20em;
 }
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.flex-row svg {
+    margin: 3em;
+    transform: scale(4,4);
+}
